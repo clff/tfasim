@@ -3,6 +3,8 @@ import { createRouter, createWebHashHistory } from 'vue-router';
 
 import Home from '@/Pages/Home';
 import Dashboard from '@/Pages/Dashboard';
+import Fees from '@/Pages/Forms/Fees';
+import PowerOfAttorney from '@/Pages/Forms/PowerOfAttorney';
 
 const routes = [
   {
@@ -15,6 +17,16 @@ const routes = [
     path: '/dashboard',
     name: 'dashboard',
     component: Dashboard
+  },
+  {
+    path: '/forms/fees',
+    name: 'fees',
+    component: Fees
+  },
+  {
+    path: '/forms/power-of-attorney',
+    name: 'powerOfAttorney',
+    component: PowerOfAttorney
   }
 ];
 
