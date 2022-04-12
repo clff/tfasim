@@ -1,0 +1,38 @@
+{
+  "name": "vaadharabanim-website",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "start": "vue-cli-service serve"
+  },
+  "dependencies": {
+    "@headlessui/vue": "^1.5.0",
+    "@heroicons/vue": "^1.0.6",
+    "axios": "^0.24.0",
+    "css-tooltip": "^0.3.4",
+    "dayjs": "^1.10.7",
+    "freewindcss": "^0.0.12",
+    "vue": "^3.2.31",
+    "vue-router": "^4.0.11",
+    "vue-tabler-icons": "^2.4.3"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "4.5.13",
+    "@vue/cli-plugin-eslint": "4.5.13",
+    "@vue/cli-plugin-router": "4.5.13",
+    "@vue/cli-service": "4.5.13",
+    "@vue/compiler-sfc": "3.2.2",
+    "@vue/eslint-config-prettier": "6.0.0",
+    "babel-eslint": "10.1.0",
+    "babel-plugin-component": "1.1.1",
+    "eslint": "7.31.0",
+    "eslint-plugin-prettier": "3.4.0",
+    "eslint-plugin-vue": "7.14.0",
+    "prettier": "2.3.2",
+    "sass": "^1.43.4",
+    "sass-loader": "10.1.1"
+  }
+}
