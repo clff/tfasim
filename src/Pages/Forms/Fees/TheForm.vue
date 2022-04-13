@@ -7,7 +7,7 @@ import TheFormLawyerInfo from "./TheFormLawyerInfo";
 let currentStep = feesService.methods.currentStep;
 
 const currentComponent = computed(() => {
-  switch (currentStep.value) {
+  switch (currentStep.value.value) {
     case "clientInfo":
       return TheFormClientInfo;
     case "lawyerInfo":
