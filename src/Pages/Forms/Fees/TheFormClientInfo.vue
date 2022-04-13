@@ -2,16 +2,27 @@
 import feesService from "./feesService";
 
 const model = feesService.state.feesModel;
+
+const previousStep = () => {
+  feesService.methods.previousStep();
+};
+
+const nextStep = () => {
+  feesService.methods.nextStep();
+};
 </script>
 
 <template>
   <div class="client-container">
-    <h1>client info</h1>
-    <FormInput labelText="שם פרטי" v-model="model.client.firstName" />
-    <FormInput labelText="שם משפחה" v-model="model.client.lastName" />
-  </div>
-  <div>
-    <Button />
+    <div class="client-wrapper">
+      <h1>client info</h1>
+      <FormInput labelText="שם פרטי" v-model="model.client.firstName" />
+      <FormInput labelText="שם משפחה" v-model="model.client.lastName" />
+    </div>
+    <div>
+      <Button text="המשך" @action="nextStep" />
+      <Button text="הקודם" @action="previousStep" />
+    </div>
   </div>
 </template>
 
