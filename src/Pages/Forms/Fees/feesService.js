@@ -2,6 +2,18 @@ import { ref, computed } from 'vue';
 
 const feesService = {
   state: {
+    feesModel: ref({
+      client: {
+        firstName: null,
+        lastName: null,
+        id: null
+      },
+      lawyer: {
+        firstName: null,
+        lastName: null,
+        id: null
+      }
+    }),
     counter: ref(0),
     formSteps: ref([
       { text: 'פרטי עורך הדין', value: 'lawyerInfo', linkable: true },
