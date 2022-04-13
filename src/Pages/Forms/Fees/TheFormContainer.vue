@@ -21,11 +21,5 @@ import TheResults from "./TheResults";
   grid-template-columns: 500px 500px;
   column-gap: var(--fw-56);
   justify-content: center;
-
-  .form-wrapper {
-  }
-
-  .results-wrapper {
-  }
 }
 </style>
